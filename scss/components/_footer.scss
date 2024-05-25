@@ -1,0 +1,36 @@
+/* footer*/
+.iconos-fijos {
+
+    position: fixed; /* Fija el contenedor en la ventana del navegador */
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Para que los elementos se alineen horizontalmente */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: flex-end; /* Para alinear los elementos a la derecha */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+    a {
+        background-color: #cecaca;
+        padding: 15px;
+        border-radius: 15%;
+        margin-bottom: 10px; /* Espacio entre los iconos */
+        color: #5e5b5b; /* Cambia el color de los iconos */
+        font-size: 32px; /* Tamaño de la fuente de los iconos */
+        @media (min-width: 769px){
+            &:hover{
+                color: #000000;
+                transition: 1s;
+            
+            }
+        }
+        @media (max-width:479px){
+            padding: 8px;
+            border-radius: 15%;
+            margin-bottom: 5px; /* Espacio entre los iconos */
+            color: #5e5b5b; /* Cambia el color de los iconos */
+            font-size: 20px; /* Tamaño de la fuente de los iconos */
+            
+        }
+    }
+}
+
+

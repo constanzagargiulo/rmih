@@ -1,0 +1,635 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*variables*/
+nav ul {
+  list-style: none; /* para quitar los puntos de la barra*/
+  display: flex; /*la barra ahora es horizontal */
+  justify-content: center;
+}
+
+nav li {
+  padding-top: 15px;
+  margin: 15px;
+  justify-content: center;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "Comfortaa", sans-serif;
+}
+
+li a {
+  text-decoration: none;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+}
+
+.main {
+  background-color: black;
+}
+
+/* footer ----------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: white;
+}
+
+footer h3 {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 25px;
+}
+
+footer h4 {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 10px;
+}
+
+.contactos {
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main div {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/*titulo rmh*/
+/*carousel*/
+.carousel-inner img {
+  object-fit: cover;
+}
+
+.barra {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.barra h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 17px;
+  color: rgb(0, 0, 0);
+}
+
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 90px;
+}
+
+.main {
+  background-color: black;
+}
+
+/* BANNER ----------------------------------*/
+.banner {
+  margin: 0px;
+  padding: 0px;
+}
+.banner img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  object-fit: cover;
+}
+
+/*introduccion a rmh*/
+.main-section-container {
+  display: grid;
+  grid-template-columns: 500px 300px;
+  justify-content: center;
+  align-items: center;
+}
+.main-section-container p {
+  flex: 1;
+  padding: 10px;
+  font-size: large;
+  line-height: 2;
+  text-align: justify;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: weight;
+}
+.main-section-container img {
+  width: 400px;
+}
+
+.main-section-container p:hover {
+  background-color: rgb(0, 0, 0); /* Fondo negro en hover */
+  color: white; /* Texto blanco en hover */
+  transition: 1s;
+}
+
+/* banner 2*/
+.figure-banner {
+  display: flex;
+  justify-content: center;
+}
+.figure-banner img {
+  width: 100%;
+  padding: 0px;
+  margin: -20px;
+  border: 0px;
+}
+
+.carousel-inner,
+.carousel-item {
+  width: 1000%;
+  height: 840px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* desde renders .. imagen 3d*/
+.section-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: space-around;
+  padding: 15px;
+  gap: 15px;
+  margin: 0px;
+  background-color: white;
+}
+.section-div img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.section-div h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.section-div p {
+  font-size: 25px;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+
+.section-div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-div-imgage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONCURSOS */
+.concursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.concursos img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.logo-concursos {
+  padding-left: 100px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* footer*/
+.iconos-fijos {
+  position: fixed; /* Fija el contenedor en la ventana del navegador */
+  bottom: 20px; /* Ajusta la distancia desde abajo */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  display: flex; /* Para que los elementos se alineen horizontalmente */
+  flex-direction: column; /* Para que los elementos se apilen verticalmente */
+  align-items: flex-end; /* Para alinear los elementos a la derecha */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+.iconos-fijos a {
+  background-color: #cecaca;
+  padding: 15px;
+  border-radius: 15%;
+  margin-bottom: 10px; /* Espacio entre los iconos */
+  color: #5e5b5b; /* Cambia el color de los iconos */
+  font-size: 32px; /* Tamaño de la fuente de los iconos */
+}
+
+/* Estilos para los iconos */
+/* Cambia el color de los iconos al pasar el mouse sobre ellos */
+.iconos-fijos a:hover {
+  color: #000000;
+  transition: 1s;
+}
+
+/*media*/
+@media (min-width: 480px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 90px;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  nav li {
+    padding: 0px;
+    margin: 10px;
+  }
+  .img-banner {
+    width: 100%;
+  }
+  .titulo-servicios {
+    font-size: 35px;
+    text-align: center;
+  }
+  .main-section-container {
+    display: grid;
+    grid-template-columns: 400px 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section-container p {
+    flex: 1;
+    padding: 0px;
+    font-size: medium;
+    line-height: 2;
+    text-align: justify;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: weight;
+  }
+  .main-section-container img {
+    width: 300px;
+  }
+  .iconos-fijos {
+    position: fixed; /* Fija el contenedor en la ventana del navegador */
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Para que los elementos se alineen horizontalmente */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: flex-end; /* Para alinear los elementos a la derecha */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+  }
+  .iconos-fijos a {
+    background-color: #cecaca;
+    padding: 10px;
+    border-radius: 15%;
+    margin-bottom: 10px; /* Espacio entre los iconos */
+    color: #5e5b5b; /* Cambia el color de los iconos */
+    font-size: 20px; /* Tamaño de la fuente de los iconos */
+  }
+  /* Estilos para los iconos */
+  /* Cambia el color de los iconos al pasar el mouse sobre ellos */
+  .iconos-fijos a:hover {
+    color: #000000;
+    transition: 1s;
+  }
+}
+@media (max-width: 479px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 90px;
+  }
+  nav ul {
+    padding: 0px;
+    margin: 2px;
+  }
+  nav li {
+    padding: 0px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .wide {
+    grid-column: auto;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .concursos-titulo div h2 {
+    font-size: 40px;
+  }
+  .img-banner {
+    width: 100%;
+  }
+  .section-div-p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .section-div-titulo {
+    text-align: center;
+  }
+  .titulo-servicios {
+    font-size: 30px;
+    text-align: center;
+  }
+  .casas {
+    justify-items: center;
+  }
+  .edificios {
+    justify-items: center;
+  }
+  .diseño-de-interiores {
+    justify-items: center;
+  }
+  .casas-img {
+    width: 250px;
+  }
+  .main-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section-container p {
+    flex: 1;
+    padding: 0px;
+    font-size: medium;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: weight;
+    padding: 15px;
+  }
+  .main-section-container img {
+    display: none;
+  }
+  .iconos-fijos {
+    position: fixed; /* Fija el contenedor en la ventana del navegador */
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Para que los elementos se alineen horizontalmente */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: flex-end; /* Para alinear los elementos a la derecha */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+  }
+  .iconos-fijos a {
+    background-color: #cecaca;
+    padding: 10px;
+    border-radius: 15%;
+    margin-bottom: 10px; /* Espacio entre los iconos */
+    color: #5e5b5b; /* Cambia el color de los iconos */
+    font-size: 20px; /* Tamaño de la fuente de los iconos */
+  }
+  /* Estilos para los iconos */
+  /* Cambia el color de los iconos al pasar el mouse sobre ellos */
+  .iconos-fijos a:hover {
+    color: #000000;
+    transition: 1s;
+  }
+}
+/* -----------------CONTACTO.html------------------*/
+.formulario {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  padding: 15px;
+}
+
+.formulario label {
+  font-size: 25px;
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(83, 87, 87);
+}
+
+.formulario-h2 {
+  font-size: 30px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.formulario-p {
+  font-size: 23px;
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(83, 87, 87);
+}
+
+/* -----------------ESTUDIO.html------------------*/
+/*TITULO*/
+/*banner estudio*/
+.estudio-banner {
+  width: 100%;
+}
+
+.estudio-div {
+  background-color: black;
+  padding: 15px;
+  margin-top: -17px;
+}
+
+.estudio-h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  padding: 15px;
+  font-size: 45px;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.estudio {
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.estudio-p {
+  color: white;
+  padding: 25px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 40px;
+}
+
+/* descripcion de cursos*/
+/* UX UI*/
+#rectangulos-izquierda {
+  grid-template-columns: 1000px;
+  padding-right: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+}
+
+.imagen-contenedor-izquierda {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  border-radius: 25px;
+}
+
+.imagen-ux-ui {
+  width: 300px;
+  border-radius: 10%;
+  border: solid 2px rgb(17, 17, 17);
+}
+
+.texto-rectangulo-izquierda {
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+}
+
+/* LUMION-CORONA RENDERING*/
+#rectangulos-derecha {
+  grid-template-columns: 1000px;
+  padding-left: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+}
+
+.imagen-contenedor-derecha {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  margin: 0px;
+}
+
+.texto-rectangulo-derecha {
+  text-align: right;
+  padding-left: 50px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  color: rgb(26, 25, 25);
+  margin-right: 50px;
+}
+
+/* -----------------PROYECTOS.html------------------*/
+/* titulos*/
+.proyectos-titulos {
+  font-family: "Quicksand", sans-serif;
+  justify-content: flex-start;
+  font-size: xx-large;
+  padding-left: 10px;
+  background-color: rgb(7, 6, 6);
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+}
+
+.casas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  justify-content: space-around;
+  background-image: url(../img/white-texture.jpg);
+  padding: 15px;
+}
+
+.casas-img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.edificios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  justify-content: space-around;
+  background-image: url(../img/white-texture.jpg);
+  padding: 15px;
+}
+
+.diseño-de-interiores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  justify-content: space-around;
+  background-image: url(../img/white-texture.jpg);
+  padding: 15px;
+}
+
+.card-img {
+  width: 100px;
+}
+
+/* -----------------SERVICIOS.html------------------*/
+.servicios-main {
+  margin-bottom: 25px;
+}
+.servicios-main h1 {
+  padding: 10px;
+}
+.servicios-main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 30px;
+}
+
+.titulo :hover {
+  background-color: black;
+}
+
+.titulo-generico {
+  font-family: "Quicksand", sans-serif;
+  justify-content: flex-start;
+  font-size: xx-large;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: rgb(7, 6, 6);
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+
+
+/* -----------------PROYECTOS.html------------------*/
+
+
+.titulos-proyectos{
+
+    p{
+        font-size: large;
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 1.5;
+        font-family: "Comfortaa", sans-serif;
+        @media (max-width:769px){
+            flex: 1;
+            padding: 0px;
+            font-size: medium;
+            line-height: 1.5;
+            text-align: justify;
+            font-family: "Comfortaa", sans-serif;
+            font-weight: weight;
+            padding: 15px;
+        }
+    }
+    .casas{
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(300px, 400px)) ;
+        gap: 20px;
+        justify-content: space-around;
+        padding: 15px;
+        img{
+            object-fit: cover;
+            width: 400px;
+            border-radius: 15px ;
+            transition: 0.5s;
+            @media (min-width: 769px){
+                &:hover{
+                    transition: 1s;
+                    box-shadow: 15px 15px 15px  lighten(rgb(94, 86, 86), 10%);
+                }
+            }
+        }
+    }
+    .card-img-overlay{
+        text-align: right;
+        .card-text{
+            color: rgb(26, 25, 25);
+            text-align: left;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+    
+}

@@ -1,0 +1,65 @@
+/* -----------------CONTACTO.html------------------*/
+
+
+#titulo-contacto{
+    font-size: 1.5rem;
+    color: rgb(26, 25, 25);
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    transition: 0.5s;
+}
+
+.section-form{
+    h2{
+        color: #4e4e4e;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: "Quicksand", sans-serif;
+    }
+    form{
+        border-width: 2px;
+        border-color: rgb(143, 143, 143);
+        background-color: white;
+        color: #6b6b6b;
+        font-size: 1em;
+        padding: 20px;
+        margin: 0 auto;
+        width: 300px;
+        
+        p{
+            color: #acacac;
+            transition: 0.5s;
+            @media (min-width: 769px){
+                &:hover{
+                    color: #000000;
+                    transition: 1s;
+                }
+            }
+        }
+        input{
+            background-color: rgb(255, 253, 253);
+            
+    
+        }
+    }
+    input[type="text"],
+    textarea {
+        border: 1px solid #ccc; 
+        padding: 8px; 
+        margin-bottom: 10px; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+}
+.boton{
+    text-align: center;
+    border: none;
+    color: #6b6b6b;
+    @media (min-width: 769px){
+        &:hover{
+            color: #000000;
+        }
+    }
+}

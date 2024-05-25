@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.carousel-inner img {
+    object-fit: cover;
+
+}
+
+
+
+
+/*introduccion a rmh*/
+.main-section-container{
+    display: grid;
+    grid-template-columns: 500px 300px;
+    justify-content: center;
+
+    align-items: center;
+    @media (max-width:769px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        flex: 1;
+        font-size: large;
+        line-height: 2;
+        text-align: justify;
+        font-family: "Comfortaa", sans-serif;
+        font-weight: weight;
+        @media (max-width:479px){
+            flex: 1;
+            padding: 0px;
+            font-size: medium;
+            line-height: 1.5;
+            text-align: justify;
+            font-family: "Comfortaa", sans-serif;
+            font-weight: weight;
+            padding: 15px;
+        }
+    }
+    img{
+        width: 400px;
+        @media (max-width:769px){
+            display: none;
+        }
+    }
+    article {
+        padding: 10px;
+        transition: 0.5s;
+    
+        @media (min-width: 769px) {
+            &:hover {
+                background-color: rgb(143, 24, 24); 
+                color: white; 
+                transition: 1s;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+
+
+/*renders-diseñoarquitectonico-imagenes*/
+.section-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: space-around;
+    padding: 15px;
+    gap: 15px;
+    margin: 0px;
+    background-color: white;
+    img{
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        object-fit: cover
+        
+        
+    }
+    h2{
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        transition: 0.5s;
+        @media (min-width: 769px){
+            &:hover{
+                color: #868383;
+                font-size: 2rem;
+                transition: 1s;
+            }
+        }
+    }
+    p{
+        font-size: 25px;
+        font-family: "Prata", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: justify;
+    }
+}
+
+/* BANNER ----------------------------------*/
+.banner{
+    margin: 0px;
+    padding: 0px;
+    img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+    }
+}
+
+
+
+/* CONCURSOS */
+
+.concursos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        object-fit: cover;
+        transition: 0.5s;
+        @media (min-width: 769px){
+            &:hover{
+                transition: 1s;
+                box-shadow: 15px 15px 15px  lighten(rgb(94, 86, 86), 10%);
+            }
+        }
+    }
+}   
+
+.logo-concursos{
+    padding: 5px;
+    h2{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:479px) {
+
+    .wide {
+    grid-column: auto;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

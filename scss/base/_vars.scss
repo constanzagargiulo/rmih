@@ -1,0 +1,44 @@
+/*variables*/
+/* BANNER ----------------------------------*/
+.banner{
+    margin: 0px;
+    padding: 0px;
+    img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+    }
+}
+
+.titulo-generico{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    @media (max-width: 769px){
+        font-size: 2rem;
+    }
+}
+
+.texto-generico{
+    flex: 1;
+    font-size: large;
+    line-height: 2;
+    text-align: justify;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: weight;
+    @media (max-width:479px){
+        flex: 1;
+        padding: 0px;
+        font-size: medium;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: "Comfortaa", sans-serif;
+        font-weight: weight;
+        padding: 15px;
+    }
+}
